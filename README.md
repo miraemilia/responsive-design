@@ -10,5 +10,5 @@ This is an Integrify Full stack program assignment. The task was to create a web
 ## Deployment
 
 The webpage is deployed with GitHub Pages.
-[Link to the deployment]()
+[Link to the deployment](https://miraemilia.github.io/responsive-design/)
 
