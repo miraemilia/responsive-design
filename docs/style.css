@@ -1,0 +1,31 @@
+* {
+    background-color: rgb(37, 37, 48);
+    font-family: 'Helvetica Neue';
+    color:rgb(242, 242, 242)
+}
+
+header {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-areas: "heading . nav";
+}
+
+h1 {
+    grid-area: heading;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+}
+
+.navigation--header {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 1em
+}
+
+.navigation--header a {
+    text-decoration: none;
+    margin: auto;
+}
