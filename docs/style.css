@@ -10,11 +10,14 @@ header {
   grid-template-columns: 1fr 2fr 4fr;
   grid-template-areas: "heading . nav";
 }
-
-h1 {
+header h1 {
   grid-area: heading;
   font-family: "Helvetica Neue";
   text-align: center;
+}
+header a {
+  text-decoration: none;
+  margin: auto;
 }
 
 .navigation--header {
@@ -23,11 +26,6 @@ h1 {
   justify-content: flex-end;
   align-content: center;
   column-gap: 1em;
-}
-
-.navigation--header a {
-  text-decoration: none;
-  margin: auto;
 }
 
 main {

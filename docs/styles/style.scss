@@ -1,7 +1,11 @@
+$background-color: rgb(37, 37, 48);
+$text-color: rgb(242, 242, 242);
+$main-font: 'Helvetica Neue';
+
 * {
-    background-color: rgb(37, 37, 48);
-    font-family: 'Helvetica Neue';
-    color:rgb(242, 242, 242)
+    background-color: $background-color;
+    font-family: $main-font;
+    color: $text-color;
 }
 
 header {
@@ -9,12 +13,17 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
     grid-template-areas: "heading . nav";
-}
 
-h1 {
-    grid-area: heading;
-    font-family: 'Helvetica Neue';
-    text-align: center;
+    h1 {
+        grid-area: heading;
+        font-family: 'Helvetica Neue';
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        margin: auto;
+    }
 }
 
 .navigation--header {
@@ -25,10 +34,7 @@ h1 {
     column-gap: 1em
 }
 
-.navigation--header a {
-    text-decoration: none;
-    margin: auto;
-}
+
 
 main {
     display: grid;
