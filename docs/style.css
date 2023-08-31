@@ -1,7 +1,30 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 * {
   background-color: rgb(37, 37, 48);
   font-family: "Helvetica Neue";
   color: rgb(242, 242, 242);
+}
+
+button {
+  background-color: #46465b;
+  border: none;
+  text-align: center;
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+button:hover {
+  background-color: rgb(104, 141, 98);
+  color: rgb(37, 37, 48);
 }
 
 header {
@@ -41,6 +64,7 @@ main {
 
 .margintext p {
   transform: rotate(-90deg);
+  white-space: nowrap;
 }
 
 .pinned--posts {
@@ -90,6 +114,20 @@ main {
 
 .subscribe {
   grid-area: subscribe;
+  text-align: center;
+  padding: 3em;
+}
+.subscribe p {
+  animation: typing 5s steps(25), blink 0.5s step-end infinite alternate;
+  overflow: hidden;
+  width: 0;
+  border-right: 0.15em solid rgb(242, 242, 242);
+}
+.subscribe input {
+  width: 50%;
+  border: none;
+  border-bottom: 1.5px solid rgb(242, 242, 242);
+  text-align: center;
 }
 
 footer {
@@ -119,7 +157,7 @@ footer ul li {
   font-size: 2em;
 }
 footer ul li i:hover {
-  color: rgb(119, 83, 16);
+  color: rgb(104, 141, 98);
 }
 
 .footer--left p {

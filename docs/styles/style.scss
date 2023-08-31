@@ -1,12 +1,33 @@
 $background-color: rgb(37, 37, 48);
+$lighter-background: lighten($background-color, 15%);
 $text-color: rgb(242, 242, 242);
-$hover-color: rgb(119, 83, 16);
+$hover-color: rgb(104, 141, 98);
 $main-font: 'Helvetica Neue';
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
 
 * {
     background-color: $background-color;
     font-family: $main-font;
     color: $text-color;
+}
+
+button {
+    background-color: $lighter-background;
+    border: none;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+    padding: 2em 3em;
+    border-radius: 0.5em;
+    margin: 1em;
+    &:hover {
+        background-color: $hover-color;
+        color: $background-color;
+    }
 }
 
 header {
@@ -54,6 +75,7 @@ main {
 
 .margintext p {
     transform: rotate(-90deg);
+    white-space: nowrap;
 }
 
 .pinned--posts {
@@ -103,6 +125,21 @@ main {
 
 .subscribe {
     grid-area: subscribe;
+    text-align: center;
+    padding: 3em;
+    p {
+        animation: typing 5s steps(25), blink 0.5s step-end infinite alternate;
+        overflow: hidden;
+        width: 0;
+        border-right: .15em solid $text-color;
+
+    }
+    input {
+        width: 50%;
+        border: none;
+        border-bottom: 1.5px solid $text-color;
+        text-align: center;
+    }
 }
 
 footer {
