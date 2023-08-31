@@ -92,4 +92,39 @@ main {
   grid-area: subscribe;
 }
 
+footer {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  column-gap: 0.6em;
+}
+footer a {
+  text-decoration: none;
+  margin: auto;
+  font-size: 0.7em;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  column-gap: 0.6em;
+}
+footer ul li {
+  list-style-type: none;
+  font-size: 2em;
+}
+footer ul li i:hover {
+  color: rgb(119, 83, 16);
+}
+
+.footer--left p {
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
 /*# sourceMappingURL=style.css.map */

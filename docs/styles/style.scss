@@ -1,5 +1,6 @@
 $background-color: rgb(37, 37, 48);
 $text-color: rgb(242, 242, 242);
+$hover-color: rgb(119, 83, 16);
 $main-font: 'Helvetica Neue';
 
 * {
@@ -102,4 +103,44 @@ main {
 
 .subscribe {
     grid-area: subscribe;
+}
+
+footer {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        column-gap: 0.6em
+    }
+    a {
+        text-decoration: none;
+        margin: auto;
+        font-size: 0.7em;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-start;
+        column-gap: 0.6em;
+        li {
+            list-style-type: none;
+            font-size: 2em;
+            i {
+                &:hover {
+                    color: $hover-color;
+                }                
+            }
+
+        }
+    }
+}
+
+.footer--left {
+    p {
+        font-size: 0.6em;
+        letter-spacing: 0.1em
+    }
 }
