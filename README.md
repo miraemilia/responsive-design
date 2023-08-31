@@ -7,6 +7,16 @@ This is an Integrify Full stack program assignment. The task was to create a web
 - HTML5
 - SASS
 
+## TO DO
+
+- add article texts to images (HTML img or grid cell background image?)
+- fix grid for pinned articles
+- fix flex for earlier articles
+- fix animation
+- refine overall layout
+- modify font families
+- test responsiveness with different screens sizes and devices
+
 ## Deployment
 
 The webpage is deployed with GitHub Pages.
