@@ -4,11 +4,6 @@ $text-color: rgb(242, 242, 242);
 $hover-color: rgb(104, 141, 98);
 $main-font: 'Helvetica Neue';
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
 @mixin img-style {
     border-radius: 4px;
     opacity: 0.3;
@@ -171,19 +166,31 @@ main {
     grid-area: subscribe;
     text-align: center;
     padding: 3em;
-    p {
-        animation: typing 5s steps(25), blink 0.5s step-end infinite alternate;
-        overflow: hidden;
-        width: 0;
-        border-right: .15em solid $text-color;
-
-    }
     input {
         width: 50%;
         border: none;
         border-bottom: 1.5px solid $text-color;
         text-align: center;
     }
+}
+
+.animation--typing {
+    display:inline-flex;
+    content:" ";
+    text-align: center;
+    span {
+        animation: typing 4s linear infinite alternate;
+        word-break: break-all;
+        letter-spacing: 0.3em;
+        overflow: hidden;
+        width: 0%;
+        height: 1.2em;
+        border-right: .15em solid $text-color;
+    }
+}
+
+@keyframes typing {
+    100% { width: 100% }
 }
 
 footer {

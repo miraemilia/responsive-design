@@ -1,11 +1,3 @@
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 * {
   background-color: rgb(37, 37, 48);
   font-family: "Helvetica Neue";
@@ -163,12 +155,6 @@ main {
   text-align: center;
   padding: 3em;
 }
-.subscribe p {
-  animation: typing 5s steps(25), blink 0.5s step-end infinite alternate;
-  overflow: hidden;
-  width: 0;
-  border-right: 0.15em solid rgb(242, 242, 242);
-}
 .subscribe input {
   width: 50%;
   border: none;
@@ -176,6 +162,26 @@ main {
   text-align: center;
 }
 
+.animation--typing {
+  display: inline-flex;
+  content: " ";
+  text-align: center;
+}
+.animation--typing span {
+  animation: typing 4s linear infinite alternate;
+  word-break: break-all;
+  letter-spacing: 0.3em;
+  overflow: hidden;
+  width: 0%;
+  height: 1.2em;
+  border-right: 0.15em solid rgb(242, 242, 242);
+}
+
+@keyframes typing {
+  100% {
+    width: 100%;
+  }
+}
 footer {
   padding: 2em;
   display: grid;
