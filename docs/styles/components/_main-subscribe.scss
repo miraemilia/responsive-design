@@ -1,0 +1,32 @@
+@use "../colors";
+
+.subscribe {
+    grid-area: subscribe;
+    text-align: center;
+    padding: 3em;
+    input {
+        width: 50%;
+        border: none;
+        border-bottom: 1.5px solid colors.$text-color;
+        text-align: center;
+    }
+}
+
+.animation--typing {
+    display:inline-flex;
+    content:" ";
+    text-align: center;
+    span {
+        animation: typing 4s linear infinite alternate;
+        word-break: break-all;
+        letter-spacing: 0.3em;
+        overflow: hidden;
+        width: 0%;
+        height: 1.2em;
+        border-right: .15em solid colors.$text-color;
+    }
+}
+
+@keyframes typing {
+    100% { width: 100% }
+}

@@ -1,0 +1,21 @@
+@use "../components/main-posts";
+@use "../components/main-subscribe";
+
+main {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+        "leftmargin pinned ."
+        "leftmargin newest ."
+        "leftmargin subscribe ."
+        ;
+}
+
+.margintext {
+    grid-area: leftmargin;
+    p {
+        transform: rotate(-90deg);
+        white-space: nowrap;
+    }
+}

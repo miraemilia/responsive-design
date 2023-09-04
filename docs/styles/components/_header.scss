@@ -1,0 +1,25 @@
+header {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-areas: "heading . nav";
+
+    h1 {
+        grid-area: heading;
+        font-family: 'Helvetica Neue';
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        margin: auto;
+    }
+}
+
+.navigation--header {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 1em
+}

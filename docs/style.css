@@ -1,24 +1,3 @@
-* {
-  background-color: rgb(37, 37, 48);
-  font-family: "Helvetica Neue";
-  color: rgb(242, 242, 242);
-}
-
-button {
-  background-color: #46465b;
-  border: none;
-  text-align: center;
-  font-size: 0.7em;
-  letter-spacing: 0.3em;
-  padding: 2em 3em;
-  border-radius: 0.5em;
-  margin: 1em;
-}
-button:hover {
-  background-color: rgb(104, 141, 98);
-  color: rgb(37, 37, 48);
-}
-
 header {
   padding: 2em;
   display: grid;
@@ -41,21 +20,6 @@ header a {
   justify-content: flex-end;
   align-content: center;
   column-gap: 1em;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-areas: "leftmargin pinned ." "leftmargin newest ." "leftmargin subscribe .";
-}
-
-.margintext {
-  grid-area: leftmargin;
-}
-.margintext p {
-  transform: rotate(-90deg);
-  white-space: nowrap;
 }
 
 .posts--pinned {
@@ -182,6 +146,21 @@ main {
     width: 100%;
   }
 }
+main {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: "leftmargin pinned ." "leftmargin newest ." "leftmargin subscribe .";
+}
+
+.margintext {
+  grid-area: leftmargin;
+}
+.margintext p {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
 footer {
   padding: 2em;
   display: grid;
@@ -215,6 +194,27 @@ footer ul li i:hover {
 .footer--left p {
   font-size: 0.6em;
   letter-spacing: 0.1em;
+}
+
+* {
+  background-color: rgb(37, 37, 48);
+  font-family: "Helvetica Neue";
+  color: rgb(242, 242, 242);
+}
+
+button {
+  background-color: #46465b;
+  border: none;
+  text-align: center;
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+button:hover {
+  background-color: rgb(104, 141, 98);
+  color: rgb(37, 37, 48);
 }
 
 /*# sourceMappingURL=style.css.map */
