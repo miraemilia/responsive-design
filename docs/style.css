@@ -22,145 +22,6 @@ header a {
   column-gap: 1em;
 }
 
-.post-text--small {
-  background-color: transparent;
-  color: rgb(37, 37, 48);
-  font-size: 15px;
-  margin-left: 0;
-}
-
-.post-text--small--reverse {
-  background-color: transparent;
-  color: rgb(242, 242, 242);
-  font-size: 15px;
-  margin-left: 0;
-}
-
-.button--large {
-  background-color: #46465b;
-  border: none;
-  text-align: center;
-  font-size: 0.7em;
-  letter-spacing: 0.3em;
-  padding: 2em 3em;
-  border-radius: 0.5em;
-  margin: 1em;
-}
-.button--large:hover {
-  background-color: rgb(104, 141, 98);
-  color: rgb(37, 37, 48);
-}
-
-.button--small {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: transparent;
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: rgb(37, 37, 48);
-  color: rgb(242, 242, 242);
-  border-style: solid;
-  border-width: 0.15em;
-}
-.button--small:hover {
-  background-color: rgb(242, 242, 242);
-  color: rgb(37, 37, 48);
-}
-
-.button--small--reverse {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: transparent;
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: rgb(242, 242, 242);
-  color: rgb(37, 37, 48);
-  border-style: solid;
-  border-width: 0.15em;
-}
-.button--small--reverse:hover {
-  background-color: rgb(37, 37, 48);
-  color: rgb(242, 242, 242);
-}
-
-.button--small--without-hover {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: transparent;
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: rgb(37, 37, 48);
-  color: rgb(242, 242, 242);
-  border-style: solid;
-  border-width: 0.15em;
-}
-
-.button--small--reverse--without-hover {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: transparent;
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: rgb(242, 242, 242);
-  color: rgb(37, 37, 48);
-  border-style: solid;
-  border-width: 0.15em;
-}
-
-.button--small--transparent {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: rgb(242, 242, 242);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: rgb(242, 242, 242);
-  border-style: solid;
-  border-width: 0.15em;
-}
-.button--small--transparent:hover {
-  background-color: rgb(242, 242, 242);
-  color: rgb(37, 37, 48);
-}
-
-.button--small--reverse-transparent {
-  display: inline-block;
-  padding: 0.3;
-  margin: 0.1em;
-  border-radius: 0.7em;
-  border-color: rgb(37, 37, 48);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: rgb(37, 37, 48);
-  border-style: solid;
-  border-width: 0.15em;
-}
-.button--small--reverse-transparent:hover {
-  background-color: rgb(37, 37, 48);
-  color: rgb(242, 242, 242);
-}
-
-.h--reverse-color {
-  color: rgb(242, 242, 242);
-}
-
 .posts--pinned {
   grid-area: pinned;
   display: grid;
@@ -304,9 +165,18 @@ header a {
 }
 .subscribe input {
   width: 50%;
+  margin: 2em;
+  padding: 1em;
   border: none;
   border-bottom: 1.5px solid rgb(242, 242, 242);
   text-align: center;
+  transition: width 2s ease-in-out;
+}
+.subscribe input:focus-visible {
+  outline: none;
+}
+.subscribe input:focus {
+  width: 60%;
 }
 
 .animation--typing {
@@ -347,6 +217,147 @@ main {
 .margintext p {
   transform: rotate(-90deg);
   white-space: nowrap;
+  position: sticky;
+  top: 50%;
+}
+
+.post-text--small {
+  background-color: transparent;
+  color: rgb(37, 37, 48);
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.post-text--small--reverse {
+  background-color: transparent;
+  color: rgb(242, 242, 242);
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.button--large {
+  background-color: #46465b;
+  border: none;
+  text-align: center;
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  margin: 2em;
+}
+.button--large:hover {
+  background-color: rgb(104, 141, 98);
+  color: rgb(37, 37, 48);
+}
+
+.button--small {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+  border-style: solid;
+  border-width: 0.15em;
+}
+.button--small:hover {
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+}
+
+.button--small--reverse {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+  border-style: solid;
+  border-width: 0.15em;
+}
+.button--small--reverse:hover {
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+}
+
+.button--small--without-hover {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+  border-style: solid;
+  border-width: 0.15em;
+}
+
+.button--small--reverse--without-hover {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+  border-style: solid;
+  border-width: 0.15em;
+}
+
+.button--small--transparent {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: rgb(242, 242, 242);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: rgb(242, 242, 242);
+  border-style: solid;
+  border-width: 0.15em;
+}
+.button--small--transparent:hover {
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+}
+
+.button--small--reverse-transparent {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: rgb(37, 37, 48);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: rgb(37, 37, 48);
+  border-style: solid;
+  border-width: 0.15em;
+}
+.button--small--reverse-transparent:hover {
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+}
+
+.h--reverse-color {
+  color: rgb(242, 242, 242);
 }
 
 footer {
@@ -394,7 +405,7 @@ h2 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 0;
+  padding: 1em 0em;
   line-height: 100%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
@@ -405,7 +416,7 @@ h3 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 0;
+  padding: 1em 0em;
   line-height: 100%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
@@ -416,7 +427,7 @@ h4 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 0;
+  padding: 1em 0em;
   line-height: 100%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
@@ -427,7 +438,7 @@ h5 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 0;
+  padding: 1em 0em;
   line-height: 100%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);

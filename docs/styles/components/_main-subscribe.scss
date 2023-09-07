@@ -6,9 +6,18 @@
     padding: 3em;
     input {
         width: 50%;
+        margin: 2em;
+        padding: 1em;
         border: none;
         border-bottom: 1.5px solid colors.$light;
         text-align: center;
+        transition: width 2s ease-in-out;
+        &:focus-visible {
+            outline: none;
+        }
+        &:focus{
+            width: 60%;
+        }
     }
 }
 

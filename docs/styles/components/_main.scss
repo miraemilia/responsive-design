@@ -1,6 +1,11 @@
-@use "../components/main-posts";
+@use "../components/main-pinned";
+@use "../components/main-newest";
+@use "../components/main-earlier";
 @use "../components/main-subscribe";
+
 @use "../colors";
+@use "../fonts";
+@use "../mixins";
 
 main {
     display: grid;
@@ -18,5 +23,80 @@ main {
     p {
         transform: rotate(-90deg);
         white-space: nowrap;
+        position: sticky;
+        top: 50%;
     }
+}
+
+.post-text--small {
+    background-color: transparent;
+    color: colors.$dark;
+    font-size: fonts.$p-small;
+    margin-left: 0;
+}
+
+.post-text--small--reverse {
+    background-color: transparent;
+    color: colors.$light;
+    font-size: fonts.$p-small;
+    margin-left: 0;
+}
+
+.button--large {
+    background-color: colors.$lighter-dark;
+    border: none;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+    padding: 2em 3em;
+    border-radius: 0.5em;
+    margin: 2em;
+    &:hover {
+        background-color: colors.$hover;
+        color: colors.$dark;
+    }
+}
+
+.button--small {
+    @include mixins.small-button(colors.$dark, colors.$light, transparent);
+    &:hover {
+        background-color: colors.$light;
+        color: colors.$dark;
+    }
+}
+
+.button--small--reverse {
+    @include mixins.small-button(colors.$light, colors.$dark, transparent);
+    &:hover {
+        background-color: colors.$dark;
+        color: colors.$light;
+    }
+}
+
+.button--small--without-hover {
+    @include mixins.small-button(colors.$dark, colors.$light, transparent);
+}
+
+.button--small--reverse--without-hover {
+    @include mixins.small-button(colors.$light, colors.$dark, transparent);
+}
+
+.button--small--transparent {
+    @include mixins.small-button(transparent, colors.$light, colors.$light);
+    &:hover {
+        background-color: colors.$light;
+        color: colors.$dark;
+    }
+}
+
+.button--small--reverse-transparent {
+    @include mixins.small-button(transparent, colors.$dark, colors.$dark);
+    &:hover {
+        background-color: colors.$dark;
+        color: colors.$light;
+    }
+}
+
+.h--reverse-color {
+    color: colors.$light;
 }
