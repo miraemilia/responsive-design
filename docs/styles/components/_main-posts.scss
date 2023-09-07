@@ -164,17 +164,41 @@
 }
 
 .posts--earlier {
-    display: flex;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: times(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "first first first second second second"
+    "third third fourth fourth fifth fifth"
+    ;
     gap: 2em;
     div {
         @include mixins.post-div;
+        padding: 3em;
+        background-size: 110%;
+        transition: background-size 0.5s ease-in-out;
+        &:hover {
+            background-size: 112%;
+        }
+    }
+    div:nth-of-type(1) {
+        grid-area: first;
         background-image: url(images.$image5)
     }
-    :nth-child(4) {
-        flex-grow: 3;
+    div:nth-of-type(2) {
+        grid-area: second;
+        background-image: url(images.$image4)
     }
-    :nth-child(5) {
-        flex-grow: 3;
+    div:nth-of-type(3) {
+        grid-area: third;
+        background-image: url(images.$image4)
+    }
+    div:nth-of-type(4) {
+        grid-area: fourth;
+        background-image: url(images.$image5)
+    }
+    div:nth-of-type(5) {
+        grid-area: fifth;
+        background-image: url(images.$image2)
     }
 }
