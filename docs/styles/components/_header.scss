@@ -1,5 +1,8 @@
+@use "../colors";
+
 header {
     padding: 2em;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
     grid-template-areas: "heading . nav";
@@ -13,6 +16,26 @@ header {
     a {
         text-decoration: none;
         margin: auto;
+        &.a__dot::after {
+            content: "";
+            background-color: colors.$hover;
+            position:absolute;
+            height: 5px;
+            width: 5px;
+            right: 1;
+            top: 1;
+            border-radius: 50%;
+        }
+        &.a__dot-on-hover:hover::after {
+            content: "";
+            background-color: colors.$lighter-dark;
+            position:absolute;
+            height: 5px;
+            width: 5px;
+            right: 1;
+            top: 1;
+            border-radius: 50%;
+        }
     }
 }
 
