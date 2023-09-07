@@ -3,9 +3,7 @@
 @mixin post-div {
     border-radius: 1em;
     text-align: left;
-    padding: 6em 6em 2em 3em;
-    color: colors.$text-color;
-    font-size: 1.5em;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 20%;
 }
