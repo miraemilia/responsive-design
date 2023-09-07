@@ -246,14 +246,14 @@ main {
   background-color: transparent;
   color: rgb(37, 37, 48);
   font-size: 15px;
-  margin-left: 0;
+  margin: 0;
 }
 
 .post-text--small--reverse {
   background-color: transparent;
   color: rgb(242, 242, 242);
   font-size: 15px;
-  margin-left: 0;
+  margin: 0;
 }
 
 .button--large {
@@ -428,8 +428,8 @@ h2 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 1em 0em;
-  line-height: 100%;
+  padding: 0.7em 0em;
+  line-height: 80%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
   font-size: 45px;
@@ -439,8 +439,8 @@ h3 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 1em 0em;
-  line-height: 100%;
+  padding: 0.7em 0em;
+  line-height: 80%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
   font-size: 32px;
@@ -450,8 +450,8 @@ h4 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 1em 0em;
-  line-height: 100%;
+  padding: 0.7em 0em;
+  line-height: 80%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
   font-size: 30px;
@@ -461,8 +461,8 @@ h5 {
   background-color: transparent;
   font-family: "Abril Fatface";
   margin: 0;
-  padding: 1em 0em;
-  line-height: 100%;
+  padding: 0.7em 0em;
+  line-height: 80%;
   letter-spacing: 0.05em;
   color: rgb(37, 37, 48);
   font-size: 20px;
