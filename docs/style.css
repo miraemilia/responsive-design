@@ -172,7 +172,7 @@ header a.a__dot-on-hover:hover::after {
 }
 .posts--earlier div:nth-of-type(4) {
   grid-area: fourth;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Bonsai_8.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/59/Monstera_V.jpg");
 }
 .posts--earlier div:nth-of-type(5) {
   grid-area: fifth;
@@ -182,7 +182,7 @@ header a.a__dot-on-hover:hover::after {
 .subscribe {
   grid-area: subscribe;
   text-align: center;
-  padding: 3em;
+  padding: 3em 20em;
 }
 .subscribe input {
   width: 50%;
@@ -191,7 +191,7 @@ header a.a__dot-on-hover:hover::after {
   border: none;
   border-bottom: 1.5px solid rgb(242, 242, 242);
   text-align: center;
-  transition: width 2s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 .subscribe input:focus-visible {
   outline: none;
@@ -382,38 +382,40 @@ main {
 }
 
 footer {
-  padding: 2em;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 10em;
 }
-footer nav {
+
+.footer--left a {
+  text-decoration: none;
+  margin: 0;
+  font-size: 0.7em;
+}
+.footer--left nav {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  column-gap: 0.6em;
+  column-gap: 1em;
 }
-footer a {
-  text-decoration: none;
-  margin: auto;
-  font-size: 0.7em;
-}
-footer ul {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-start;
-  column-gap: 0.6em;
-}
-footer ul li {
-  list-style-type: none;
-  font-size: 2em;
-}
-footer ul li i:hover {
-  color: rgb(104, 141, 98);
-}
-
 .footer--left p {
   font-size: 0.6em;
   letter-spacing: 0.1em;
+  color: #46465b;
+}
+
+.footer--right ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  column-gap: 2em;
+}
+.footer--right ul li {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+.footer--right ul li i:hover {
+  color: rgb(104, 141, 98);
 }
 
 * {

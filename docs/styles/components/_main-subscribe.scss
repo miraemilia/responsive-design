@@ -3,7 +3,7 @@
 .subscribe {
     grid-area: subscribe;
     text-align: center;
-    padding: 3em;
+    padding: 3em 20em;
     input {
         width: 50%;
         margin: 2em;
@@ -11,7 +11,7 @@
         border: none;
         border-bottom: 1.5px solid colors.$light;
         text-align: center;
-        transition: width 2s ease-in-out;
+        transition: width 1s ease-in-out;
         &:focus-visible {
             outline: none;
         }

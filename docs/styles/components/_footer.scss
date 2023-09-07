@@ -1,28 +1,39 @@
 @use "../colors";
 
 footer {
-    padding: 2em;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em;
+}
+
+.footer--left {
+    a {
+        text-decoration: none;
+        margin: 0;
+        font-size: 0.7em;
+    }
     nav {
         display: flex;
         justify-content: flex-start;
         align-content: center;
-        column-gap: 0.6em
+        column-gap: 1em
     }
-    a {
-        text-decoration: none;
-        margin: auto;
-        font-size: 0.7em;
+    p {
+        font-size: 0.6em;
+        letter-spacing: 0.1em;
+        color: colors.$lighter-dark;
     }
+}
+
+.footer--right {
     ul {
         display: flex;
         justify-content: flex-end;
         align-content: flex-start;
-        column-gap: 0.6em;
+        column-gap: 2em;
         li {
             list-style-type: none;
-            font-size: 2em;
+            font-size: 1.3em;
             i {
                 &:hover {
                     color: colors.$hover;
@@ -30,12 +41,5 @@ footer {
             }
 
         }
-    }
-}
-
-.footer--left {
-    p {
-        font-size: 0.6em;
-        letter-spacing: 0.1em
-    }
+    }    
 }
