@@ -14,19 +14,21 @@
 
 .animation--typing {
     display:inline-flex;
-    content:" ";
     text-align: center;
     span {
-        animation: typing 4s linear infinite alternate;
+        animation: typing 10s ease infinite alternate;
         word-break: break-all;
         letter-spacing: 0.3em;
         overflow: hidden;
-        width: 0%;
+        width: max-content;
         height: 1.2em;
-        border-right: .15em solid colors.$light;
+        border-right: .15em solid colors.$light;  
     }
+
 }
 
 @keyframes typing {
-    100% { width: 100% }
+    0%, 10% {width: 0%;}
+    40%, 50% { width: 100% }
+    90%, 100% { width: 0%;}
 }
