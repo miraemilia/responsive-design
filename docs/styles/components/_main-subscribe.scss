@@ -7,7 +7,7 @@
     input {
         width: 50%;
         border: none;
-        border-bottom: 1.5px solid colors.$text-color;
+        border-bottom: 1.5px solid colors.$light;
         text-align: center;
     }
 }
@@ -23,7 +23,7 @@
         overflow: hidden;
         width: 0%;
         height: 1.2em;
-        border-right: .15em solid colors.$text-color;
+        border-right: .15em solid colors.$light;
     }
 }
 

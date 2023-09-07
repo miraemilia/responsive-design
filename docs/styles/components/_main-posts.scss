@@ -1,21 +1,13 @@
 @use "../mixins";
 @use "../images";
 @use "../colors";
+@use "../fonts";
 
 .post-text--small {
     background-color: transparent;
-    color: colors.$background-color;
+    color: colors.$dark;
     font-size: small;
     margin-left: 0;
-}
-
-.post-text--large {
-    background-color: transparent;
-    color: colors.$background-color;
-    font-family: Corben;
-    font-weight: 800;
-    font-size: large;
-    margin: 0;
 }
 
 .button--small {
@@ -26,8 +18,12 @@
     font-size: x-small;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    background-color: colors.$background-color;
-    color: colors.$text-color;
+    background-color: colors.$dark;
+    color: colors.$light;
+}
+
+.h--reverse-color {
+    color: colors.$light;
 }
 
 .posts--pinned {
@@ -36,14 +32,19 @@
     grid-template-columns: 7fr 5fr 5fr;
     grid-template-rows: 1fr 1fr;
     gap: 1em;
-    div {
+    &__pin {
         @include mixins.post-div;
         padding: 1em 3em 1.5em 1.5em;
         display: flex;
         flex-direction: column;
-        justify-items: flex-end;
+        justify-content: space-between;
         button {
             align-self: flex-start;
+        }
+        div {
+            padding: 0;
+            margin: 0;
+            background: transparent;
         }
         &:hover {
             position: relative;
@@ -52,30 +53,27 @@
             transition-delay: 4s;
         }
     }
-    div:nth-of-type(1) {
+    &__pin:nth-of-type(1) {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
         background-image: url(images.$image1);
-        :nth-child(3) {
-            font-size: x-large;
-        }
     }
-    div:nth-of-type(2) {
+    &__pin:nth-of-type(2) {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         background-image: url(images.$image2);
     }
-    div:nth-of-type(3) {
+    &__pin:nth-of-type(3) {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         background-image: url(images.$image3);
     }
-    div:nth-of-type(4) {
+    &__pin:nth-of-type(4) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         background-image: url(images.$image4);
     }
-    div:nth-of-type(5) {
+    &__pin:nth-of-type(5) {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         background-image: url(images.$image5);

@@ -1,18 +1,39 @@
 @use "../styles/colors";
 @use "../styles/fonts";
+@use "../styles/mixins";
 
 @use "../styles/components/header";
 @use "../styles/components/main";
 @use "../styles/components/footer";
 
 * {
-    background-color: colors.$background-color;
+    background-color: colors.$dark;
     font-family: fonts.$main-font;
-    color: colors.$text-color;
+    color: colors.$light;
+}
+
+h2 {
+    @include mixins.header;
+    font-size: fonts.$h-xxl;
+}
+
+h3 {
+    @include mixins.header;
+    font-size: fonts.$h-xl;
+}
+
+h4 {
+    @include mixins.header;
+    font-size: fonts.$h-l;;
+}
+
+h5 {
+    @include mixins.header;
+    font-size: fonts.$h-m;
 }
 
 .button--large {
-    background-color: colors.$lighter-background;
+    background-color: colors.$lighter-dark;
     border: none;
     text-align: center;
     font-size: 0.7em;
@@ -21,7 +42,7 @@
     border-radius: 0.5em;
     margin: 1em;
     &:hover {
-        background-color: colors.$hover-color;
-        color: colors.$background-color;
+        background-color: colors.$hover;
+        color: colors.$dark;
     }
 }
