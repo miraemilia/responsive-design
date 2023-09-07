@@ -10,16 +10,24 @@
     margin-left: 0;
 }
 
-.button--small {
-    padding: 0.3;
-    margin: 0;
-    border-radius: 0.7em;
-    border-color: transparent;
-    font-size: x-small;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    background-color: colors.$dark;
+.post-text--small--reverse {
+    background-color: transparent;
     color: colors.$light;
+    font-size: small;
+    margin-left: 0;
+}
+
+
+.button--small {
+    @include mixins.small-button(colors.$dark, colors.$light, transparent)
+}
+
+.button--small--reverse {
+    @include mixins.small-button(colors.$light, colors.$dark, transparent)
+}
+
+.button--small--transparent {
+    @include mixins.small-button(transparent, colors.$light, colors.$light)
 }
 
 .h--reverse-color {
