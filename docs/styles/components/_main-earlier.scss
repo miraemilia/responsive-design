@@ -23,22 +23,22 @@
     }
     div:nth-of-type(1) {
         grid-area: first;
-        background-image: url(images.$image5)
+        background-image: linear-gradient(rgba(251, 252, 251, 0.5), rgba(251, 252, 251, 0.5)), url(images.$image5)
     }
     div:nth-of-type(2) {
         grid-area: second;
-        background-image: url(images.$image4)
+        background-image: linear-gradient(rgba(42, 107, 164, 0.5), rgba(42, 107, 164, 0.5)), url(images.$image4)
     }
     div:nth-of-type(3) {
         grid-area: third;
-        background-image: url(images.$image4)
+        background-image: linear-gradient(rgba(11, 40, 203, 0.5), rgba(11, 40, 203, 0.5)), url(images.$image4)
     }
     div:nth-of-type(4) {
         grid-area: fourth;
-        background-image: url(images.$image1)
+        background-image: linear-gradient(rgba(178, 240, 146, 0.7), rgba(178, 240, 146, 0.7)), url(images.$image1)
     }
     div:nth-of-type(5) {
         grid-area: fifth;
-        background-image: url(images.$image2)
+        background-image: linear-gradient(rgba(69, 13, 172, 0.5), rgba(69, 13, 172, 0.5)), url(images.$image2)
     }
 }
