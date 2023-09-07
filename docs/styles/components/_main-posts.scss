@@ -33,19 +33,43 @@
 }
 
 .button--small {
-    @include mixins.small-button(colors.$dark, colors.$light, transparent)
+    @include mixins.small-button(colors.$dark, colors.$light, transparent);
+    &:hover {
+        background-color: colors.$light;
+        color: colors.$dark;
+    }
 }
 
 .button--small--reverse {
-    @include mixins.small-button(colors.$light, colors.$dark, transparent)
+    @include mixins.small-button(colors.$light, colors.$dark, transparent);
+    &:hover {
+        background-color: colors.$dark;
+        color: colors.$light;
+    }
+}
+
+.button--small--without-hover {
+    @include mixins.small-button(colors.$dark, colors.$light, transparent);
+}
+
+.button--small--reverse--without-hover {
+    @include mixins.small-button(colors.$light, colors.$dark, transparent);
 }
 
 .button--small--transparent {
-    @include mixins.small-button(transparent, colors.$light, colors.$light)
+    @include mixins.small-button(transparent, colors.$light, colors.$light);
+    &:hover {
+        background-color: colors.$light;
+        color: colors.$dark;
+    }
 }
 
 .button--small--reverse-transparent {
-    @include mixins.small-button(transparent, colors.$dark, colors.$dark)
+    @include mixins.small-button(transparent, colors.$dark, colors.$dark);
+    &:hover {
+        background-color: colors.$dark;
+        color: colors.$light;
+    }
 }
 
 .h--reverse-color {

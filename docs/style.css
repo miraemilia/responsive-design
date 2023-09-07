@@ -65,8 +65,46 @@ header a {
   border-style: solid;
   border-width: 0.15em;
 }
+.button--small:hover {
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+}
 
 .button--small--reverse {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+  border-style: solid;
+  border-width: 0.15em;
+}
+.button--small--reverse:hover {
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+}
+
+.button--small--without-hover {
+  display: inline-block;
+  padding: 0.3;
+  margin: 0.1em;
+  border-radius: 0.7em;
+  border-color: transparent;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
+  border-style: solid;
+  border-width: 0.15em;
+}
+
+.button--small--reverse--without-hover {
   display: inline-block;
   padding: 0.3;
   margin: 0.1em;
@@ -95,6 +133,10 @@ header a {
   border-style: solid;
   border-width: 0.15em;
 }
+.button--small--transparent:hover {
+  background-color: rgb(242, 242, 242);
+  color: rgb(37, 37, 48);
+}
 
 .button--small--reverse-transparent {
   display: inline-block;
@@ -109,6 +151,10 @@ header a {
   color: rgb(37, 37, 48);
   border-style: solid;
   border-width: 0.15em;
+}
+.button--small--reverse-transparent:hover {
+  background-color: rgb(37, 37, 48);
+  color: rgb(242, 242, 242);
 }
 
 .h--reverse-color {
