@@ -6,17 +6,31 @@
 .post-text--small {
     background-color: transparent;
     color: colors.$dark;
-    font-size: small;
+    font-size: fonts.$p-small;
     margin-left: 0;
 }
 
 .post-text--small--reverse {
     background-color: transparent;
     color: colors.$light;
-    font-size: small;
+    font-size: fonts.$p-small;
     margin-left: 0;
 }
 
+.button--large {
+    background-color: colors.$lighter-dark;
+    border: none;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+    padding: 2em 3em;
+    border-radius: 0.5em;
+    margin: 1em;
+    &:hover {
+        background-color: colors.$hover;
+        color: colors.$dark;
+    }
+}
 
 .button--small {
     @include mixins.small-button(colors.$dark, colors.$light, transparent)
@@ -28,6 +42,10 @@
 
 .button--small--transparent {
     @include mixins.small-button(transparent, colors.$light, colors.$light)
+}
+
+.button--small--reverse-transparent {
+    @include mixins.small-button(transparent, colors.$dark, colors.$dark)
 }
 
 .h--reverse-color {
@@ -92,7 +110,7 @@
     grid-area: newest;
     padding: 3em 5em 3em 5em;
     text-align: center;
-    button {
+    .button--large {
         width: 100%;
     }
     .text--middle {
@@ -108,12 +126,11 @@
     div {
         display: flex;
         flex-direction: column;
+        align-content: center;
+        gap: 1em;
         @include mixins.post-div;
         background-image: url(images.$image1);
-        padding: 6em;
-        p:nth-of-type(1) {
-            font-size: xx-large;
-        }
+        padding: 9em;
         button {
             align-self: flex-start;
         }
