@@ -43,12 +43,12 @@
     &__pin:nth-of-type(3) {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        background-image: linear-gradient(rgba(251, 252, 251, 0.5), rgba(251, 252, 251, 0.5)), url(images.$image3);
+        background-image: linear-gradient(rgba(12, 162, 232, 0.5), rgba(12, 162, 232, 0.5)), url(images.$image3);
     }
     &__pin:nth-of-type(4) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        background-image: linear-gradient(rgba(26, 88, 142, 0.5), rgba(26, 88, 142, 0.5)), url(images.$image4);
+        background-image: linear-gradient(rgba(251, 252, 251, 0.7), rgba(251, 252, 251, 0.7)), url(images.$image4);
     }
     &__pin:nth-of-type(5) {
         grid-column: 3 / 4;

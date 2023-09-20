@@ -88,12 +88,12 @@ header a.a__dot-on-hover:hover::after {
 .posts--pinned__pin:nth-of-type(3) {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: linear-gradient(rgba(251, 252, 251, 0.5), rgba(251, 252, 251, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Kakteen.jpg");
+  background-image: linear-gradient(rgba(12, 162, 232, 0.5), rgba(12, 162, 232, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Kakteen.jpg");
 }
 .posts--pinned__pin:nth-of-type(4) {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: linear-gradient(rgba(26, 88, 142, 0.5), rgba(26, 88, 142, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
+  background-image: linear-gradient(rgba(251, 252, 251, 0.7), rgba(251, 252, 251, 0.7)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
 }
 .posts--pinned__pin:nth-of-type(5) {
   grid-column: 3/4;
@@ -168,7 +168,7 @@ header a.a__dot-on-hover:hover::after {
 }
 .posts--earlier div:nth-of-type(3) {
   grid-area: third;
-  background-image: linear-gradient(rgba(11, 40, 203, 0.5), rgba(11, 40, 203, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
+  background-image: linear-gradient(rgba(36, 120, 63, 0.9), rgba(36, 120, 63, 0.9)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
 }
 .posts--earlier div:nth-of-type(4) {
   grid-area: fourth;
