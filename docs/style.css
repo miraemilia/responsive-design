@@ -83,17 +83,17 @@ header a.a__dot-on-hover:hover::after {
 .posts--pinned__pin:nth-of-type(2) {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-image: linear-gradient(rgba(26, 88, 142, 0.5), rgba(26, 88, 142, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Aloe_peglerae_in_cultivation_5.jpg");
+  background-image: linear-gradient(rgba(178, 240, 146, 0.5), rgba(178, 240, 146, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Aloe_peglerae_in_cultivation_5.jpg");
 }
 .posts--pinned__pin:nth-of-type(3) {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: linear-gradient(rgba(247, 247, 74, 0.5), rgba(247, 247, 74, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Kakteen.jpg");
+  background-image: linear-gradient(rgba(251, 252, 251, 0.5), rgba(251, 252, 251, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Kakteen.jpg");
 }
 .posts--pinned__pin:nth-of-type(4) {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: linear-gradient(rgba(19, 35, 210, 0.7), rgba(19, 35, 210, 0.7)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
+  background-image: linear-gradient(rgba(26, 88, 142, 0.5), rgba(26, 88, 142, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c0/VulkanPalme.JPG");
 }
 .posts--pinned__pin:nth-of-type(5) {
   grid-column: 3/4;
@@ -176,7 +176,7 @@ header a.a__dot-on-hover:hover::after {
 }
 .posts--earlier div:nth-of-type(5) {
   grid-area: fifth;
-  background-image: linear-gradient(rgba(69, 13, 172, 0.5), rgba(69, 13, 172, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Aloe_peglerae_in_cultivation_5.jpg");
+  background-image: linear-gradient(rgba(41, 182, 121, 0.5), rgba(41, 182, 121, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Aloe_peglerae_in_cultivation_5.jpg");
 }
 
 .subscribe {
